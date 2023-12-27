@@ -1,0 +1,37 @@
+$paleta-de-colores: 
+#252525, //1
+#fff, //2
+#ff0000, //3
+#fcfcfc, //4
+#e20606, //5
+#EDEDED, //6
+#ffa2a2; //7
+
+$linear-background: 
+linear-gradient(89deg, #242424 25%, rgba(37, 37, 37, 0.94) 57.19%, rgba(44, 43, 43, 0.62) 81.11%, rgba(58, 54, 54, 0) 102.23%),
+// linear-gradient(89deg, #242424 1%, rgba(37, 37, 37, 0.94) 2%, rgba(44, 43, 43, 0.62) 250%, rgba(58, 54, 54, 0) 105%);
+linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%),
+linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%),
+linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%),
+linear-gradient(179deg, #EF0000 -30%, #181717 99.19%);
+
+
+
+
+
+
+$hx-font-size:
+250%,  //h1 320px
+300%, //h1 576px
+350%, //h1 768px
+400%, //h1 950px
+550%, //h1 < 1200px
+850%; //h1 < 2000px
+
+$p-font-size:
+110%, //p 320px
+120%, //p 576px
+140%, //p 768px
+160%, //p 950px
+170%, //p <1200px
+230%; //p <2000px

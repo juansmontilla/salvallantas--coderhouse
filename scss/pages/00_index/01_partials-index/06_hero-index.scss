@@ -1,0 +1,68 @@
+.hero_section {
+    margin: 50px 0 0;
+    .hero_section_background {
+        margin-top: 50px;
+        height: 350px;
+        background-image: url(..//media/images/services/pintura-electrostatica/pintura_electrostatica_9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: nth($list: $linear-background, $n:5 );
+            mix-blend-mode:hard-light;
+        }
+
+        .hero_section_content {
+            height: 100%;
+            @include flex(column, center, space-evenly, 0px);
+
+            h3{
+                font-size: nth($list: $p-font-size, $n:3 );
+                color: nth($list: $paleta-de-colores, $n:2 );
+                z-index: 1;
+            }
+
+            h2 {
+                @extend h3;
+                font-weight: bold;
+                font-size: nth($list: $hx-font-size, $n:1 );
+                text-align: center;
+                margin: 10% 0;
+            }
+
+            .hero_section_btn {
+                font-size: nth($list: $p-font-size, $n:1 );
+                @include flex(auto, center, center, inherit);
+                background-color: nth($list: $paleta-de-colores, $n:3 );
+                width: 90%;
+                text-align: center;
+                height: 40px;
+                padding: 10px 0;
+                border-radius: 5px;
+                z-index: 1;
+
+                &:hover {
+                    height: 35px;
+                    transition: 0.5s ease-in-out;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: nth($list: $paleta-de-colores, $n:2 );
+                }
+            }
+        }
+    }
+
+    .hero_tablet_section {
+        display: none;
+    }
+}

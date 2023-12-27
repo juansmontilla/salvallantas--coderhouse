@@ -1,0 +1,246 @@
+@media only screen and (min-width: 576px) {
+    .main-index {
+        .faq_container {
+        
+            .faq_content_container {
+                margin: 40px 7%;
+        
+                .faq_content {
+                    @include flex (column, auto, auto, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 2 );
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 1 );
+                    }
+                }
+        
+                .faq_questions {
+                    margin-top: 40px;
+        
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button {
+                                    padding: 15px;
+                                    font-size: nth($list: $p-font-size, $n: 2);
+                                }
+        
+                                .accordion-button:not(.collapsed) {
+                                    color: nth($list: $paleta-de-colores, $n: 2 );
+                                }
+                            }
+        
+                            .accordion-collapse {
+                                .accordion-body{
+                                    padding: 10px;
+                                    font-family: poppins;
+                                    line-height: 120%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-index {
+        .faq_container {
+        
+            .faq_content_container {
+                margin: 40px 8%;
+        
+                .faq_content {
+                    @include flex (column, auto, auto, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 2 );
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 2 );
+                    }
+                }
+        
+                .faq_questions {
+                    margin-top: 40px;
+        
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button {
+                                    padding: 15px;
+                                    font-size: nth($list: $p-font-size, $n: 2);
+                                }
+        
+                                .accordion-button:not(.collapsed) {
+                                    color: nth($list: $paleta-de-colores, $n: 2 );
+                                }
+                            }
+        
+                            .accordion-collapse {
+                                .accordion-body{
+                                    padding: 10px;
+                                    font-family: poppins;
+                                    line-height: 120%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .main-index {
+        .faq_container {
+        
+            .faq_content_container {
+                margin: 60px 12%;
+        
+                .faq_content {
+                    @include flex (column, auto, auto, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 2 );
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 2 );
+                    }
+                }
+        
+                .faq_questions {
+                    margin-top: 40px;
+        
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button {
+                                    padding: 15px;
+                                    font-size: nth($list: $p-font-size, $n: 3);
+                                }
+        
+                                .accordion-button:not(.collapsed) {
+                                    color: nth($list: $paleta-de-colores, $n: 2 );
+                                }
+                            }
+        
+                            .accordion-collapse {
+                                .accordion-body{
+                                    padding: 10px;
+                                    font-size: nth($list: $p-font-size, $n: 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-index {
+        .faq_container {
+        
+            .faq_content_container {
+                margin: 60px 14%;
+        
+                .faq_content {
+                    @include flex (column, auto, auto, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 2 );
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 2 );
+                    }
+                }
+        
+                .faq_questions {
+                    margin-top: 40px;
+        
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button {
+                                    padding: 15px;
+                                    font-size: nth($list: $p-font-size, $n: 3);
+                                }
+        
+                                .accordion-button:not(.collapsed) {
+                                    color: nth($list: $paleta-de-colores, $n: 2 );
+                                }
+                            }
+        
+                            .accordion-collapse {
+                                .accordion-body{
+                                    padding: 10px;
+                                    font-size: nth($list: $p-font-size, $n: 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .main-index {
+        .faq_container {
+        
+            .faq_content_container {
+                margin: 60px 18%;
+        
+                .faq_content {
+                    @include flex (column, auto, auto, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 2 );
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 2 );
+                    }
+                }
+        
+                .faq_questions {
+                    margin-top: 40px;
+        
+                    .accordion {
+                        .accordion-item {
+                            .accordion-header {
+                                .accordion-button {
+                                    padding: 15px;
+                                    font-size: nth($list: $p-font-size, $n: 3);
+                                }
+        
+                                .accordion-button:not(.collapsed) {
+                                    color: nth($list: $paleta-de-colores, $n: 2 );
+                                }
+                            }
+        
+                            .accordion-collapse {
+                                .accordion-body{
+                                    padding: 10px;
+                                    font-size: nth($list: $p-font-size, $n: 1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

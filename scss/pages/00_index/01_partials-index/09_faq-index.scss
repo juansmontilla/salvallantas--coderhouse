@@ -1,0 +1,74 @@
+.faq_container {
+    width: 100vw;
+
+    .faq_content_container {
+        margin: 40px 6.25%;
+
+        .faq_content {
+            @include flex (column, auto, auto, 20px);
+
+            h2 {
+                @extend %h2-style;
+                font-size: nth($list: $hx-font-size, $n: 1 );
+            }
+
+            p {
+                @extend %p-style;
+                font-size: nth($list: $p-font-size, $n: 1 );
+            }
+        }
+
+        .faq_questions {
+            margin-top: 40px;
+
+            .accordion {
+                    --bs-accordion-active-bg: nth($list: $paleta-de-colores, $n: 1 );
+                    --bs-accordion-btn-focus-border-color: #fff;
+
+                .accordion-item {
+                    .accordion-header {
+                        .accordion-button {
+                            padding: 10px;
+                            font-size: nth($list: $p-font-size, $n: 2);
+
+                            &:focus {
+                                background-color: nth($list: $paleta-de-colores, $n:3 );
+                                color: nth($list: $paleta-de-colores, $n:2 );
+                                border-color: transparent;
+                                box-shadow: none;
+                            }
+                        }
+
+                        .accordion-button:not(.collapsed) {
+                            color: nth($list: $paleta-de-colores, $n: 2 );
+                        }
+                    }
+
+                    .accordion-collapse {
+                        .accordion-body{
+                            padding: 10px;
+                            font-family: poppins;
+                            line-height: 120%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* </FAQ's> */

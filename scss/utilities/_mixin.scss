@@ -1,0 +1,13 @@
+@mixin flex ($flex-direction, $align-items, $justify-content, $gap){
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: $gap ;
+}
+
+@mixin auto-grid ($gap){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $gap;
+}

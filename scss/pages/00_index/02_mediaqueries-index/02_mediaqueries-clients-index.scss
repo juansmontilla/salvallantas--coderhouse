@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+    .clients {
+        .clients-slider {
+            img {
+                height: 80px;
+                margin: 0px 20px;
+            }
+        } 
+    } 
+
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .clients {
+        .clients-slider {
+            img {
+                height: 120px;
+            }
+        } 
+    } 
+}
+
+@media only screen and (min-width: 2000px) {
+    .clients {
+        .clients-slider {
+            img {
+                height: 150px;
+            }
+        } 
+    } 
+}
+

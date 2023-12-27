@@ -1,0 +1,214 @@
+@media only screen and (min-width: 576px) {
+    .main-index {
+        .testimony_container {
+            width: 100vw;
+        
+            .testimony_content_container {
+                margin: 40px 7%;
+        
+                .testimony_content {
+                    @include flex(column, flex-start, space-evenly, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 2 );
+                    }
+            
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 1 );
+                    }
+                    
+                    .p_bold {
+                        font-weight: 500;
+                        color: nth($list: $paleta-de-colores, $n:3 );
+                    }
+                }
+        
+                #carouselTestimony {
+                    .carousel-inner {
+                        .carousel-item {
+                            .testimony_cards_container {
+                                .testimony_card {
+                                    padding: 30px 0 0;
+                                    .testimony_card_background {
+                                        height: 250px;
+                                        @include flex(column, center, space-evenly, inherit);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-index {
+        .testimony_container {       
+            .testimony_content_container {
+                margin: 40px 8%;
+        
+                .testimony_content {
+                    @include flex(column, flex-start, space-evenly, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 3 );
+                    }
+            
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 2 );
+                    }
+                }
+        
+                #carouselTestimony {
+                    .carousel-inner {
+                        .carousel-item {
+                            .testimony_cards_container {
+                                .testimony_card {
+                                    padding: 30px 0 0;
+                                    .testimony_card_background {
+                                        height: 250px;
+                                        @include flex(column, center, space-evenly, inherit);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .main-index {
+        .testimony_container {       
+            .testimony_content_container {
+                margin: 40px 12%;
+                @include flex(row, center, stretch, 20px);
+                flex-wrap: wrap;
+        
+                .testimony_content {
+                    width: 50%;
+                    @include flex(column, flex-start, space-evenly, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 3 );
+                    }
+            
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 2 );
+                    }
+                }
+        
+                #carouselTestimony {
+                    width: 45%;
+                    .carousel-inner {
+                        .carousel-item {
+                            .testimony_cards_container {
+                                .testimony_card {
+                                    padding: 30px 0 0;
+                                    .testimony_card_background {
+                                        padding: 10px;
+                                        height: 250px;
+                                        @include flex(column, center, space-evenly, inherit);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-index {
+        .testimony_container {       
+            .testimony_content_container {
+                margin: 40px 14%;
+                @include flex(row, center, stretch, 0px);
+                flex-wrap: wrap;
+        
+                .testimony_content {
+                    width: 50%;
+                    @include flex(column, flex-start, space-evenly, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 4 );
+                    }
+            
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 3 );
+                    }
+                }
+        
+                #carouselTestimony {
+                    width: 45%;
+                    .carousel-inner {
+                        .carousel-item {
+                            .testimony_cards_container {
+                                .testimony_card {
+                                    padding: 30px 0 0;
+                                    .testimony_card_background {
+                                        height: 250px;
+                                        @include flex(column, center, space-evenly, inherit);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-index {
+        .testimony_container {       
+            .testimony_content_container {
+                margin: 40px 14%;
+                @include flex(row, center, space-between, 20px);
+                flex-wrap: wrap;
+        
+                .testimony_content {
+                    width: 50%;
+                    @include flex(column, flex-start, space-evenly, 20px);
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n: 4 );
+                    }
+            
+                    p {
+                        font-size: nth($list: $p-font-size, $n: 3 );
+                    }
+                }
+        
+                #carouselTestimony {
+                    width: 45%;
+                    .carousel-inner {
+                        .carousel-item {
+                            .testimony_cards_container {
+                                .testimony_card {
+                                    padding: 30px 0 0;
+                                    .testimony_card_background {
+                                        height: 250px;
+                                        @include flex(column, center, space-evenly, inherit);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}

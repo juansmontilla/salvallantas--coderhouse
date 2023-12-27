@@ -1,0 +1,53 @@
+.image_galery_container {
+    width: 100%;
+
+    .image_galery_content {
+        margin: 40px 6.25%;
+
+        h2 {
+            @extend %h2-style;
+            font-size: nth($list: $hx-font-size, $n:1 )
+        }
+
+        a {
+            text-decoration: none;
+            color: nth($list: $paleta-de-colores, $n:3 );
+            font-size: nth($list: $p-font-size, $n: 2);
+            display: inline-block;
+            margin-top: 5%;
+        }
+
+        .image_item_container {
+            margin-top: 40px;
+            @include auto-grid(20px);
+
+            .image_item {
+                width: 100%;
+                height: 320px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 4px #25252573;
+            }
+
+            .img-glr-1{
+                background-size: cover;
+                background-position: center;
+                background-image: url(..//media/images/services/pintura-electrostatica/pintura_electrostatica_10.jpg);
+            }
+            
+            .img-glr-2{
+                @extend .img-glr-1;
+                background-image: url(..//media/images/services/pintura-electrostatica/pintura_electrostatica_11.jpg);
+            }
+            
+            .img-glr-3{
+                @extend .img-glr-1;
+                background-image: url(..//media/images/services/pintura-electrostatica/pintura_electrostatica_18.jpg);
+            }
+            
+            .img-glr-4{
+                @extend .img-glr-1;
+                background-image: url(..//media/images/services/pintura-electrostatica/pintura_electrostatica_3.jpg);
+            }
+        }
+    }
+}

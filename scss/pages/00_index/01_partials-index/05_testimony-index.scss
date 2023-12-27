@@ -1,0 +1,132 @@
+.testimony_container {
+    width: 100vw;
+
+    .testimony_content_container {
+        margin: 40px 6.25%;
+
+        .testimony_content {
+            @include flex(column, center, space-evenly, 20px);
+
+            h2 {
+                @extend %h2-style;
+                font-size: nth($list: $hx-font-size, $n: 1 );
+            }
+    
+            p {
+                @extend %p-style;
+                font-size: nth($list: $p-font-size, $n: 1 );
+            }
+            
+            .p_bold {
+                font-weight: 500;
+                color: nth($list: $paleta-de-colores, $n:3 );
+            }
+        }
+
+        #carouselTestimony {
+            .carousel-inner {
+                .carousel-item {
+                    .testimony_cards_container {
+                        .testimony_card {
+                            padding: 30px 0 0;
+                            .testimony_card_background {
+                                height: 250px;
+                                @include flex(column, center, space-evenly, inherit);
+                                background: nth($list: $linear-background , $n: 2);
+                                text-align: center;
+                                border-radius: 5px;
+                                // width: 100%;
+                                position: relative;
+
+                                .testimony_card_img::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: -20px;
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius:50%;
+                                    left: 40%;
+                                    background-image: url(../media/testimonios/ALEJANDRO\ HOLGUIN.png);
+                                    // display: flex;
+                                    // align-self: baseline;
+                                    // z-index: 10;
+                                }
+
+                                // .testimony_card_title {
+                                //     // h4 {
+                                //     //     color: #00FF57;
+                                //     // }
+                                // }
+
+                                // .testimony_cards_stars {
+                                //     display: flex;
+                                // }
+
+                                // .testimony_card_content {
+
+                                // }
+
+                                .testimony_card_img2::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: -20px;
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius:100%;
+                                    left: 40%;
+                                    background-image: url(../media/testimonios/DAVID\ MIZRACHI.png);
+                                    display: flex;
+                                    align-self: baseline;
+                                    z-index: 10;
+                                }
+
+                                .testimony_card_img3::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: -20px;
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius:100%;
+                                    left: 40%;
+                                    background-image: url(../media/testimonios/CAROLINA\ MONDRAGON.png);
+                                    display: flex;
+                                    align-self: baseline;
+                                }
+                                
+                            }
+
+                            .tstcrd2 {
+                                border-radius: 5px;
+                                background: nth($list: $linear-background , $n: 3);
+                            }
+
+                            .tstcrd3 {
+                                border-radius: 5px;
+                                background: nth($list: $linear-background , $n: 4);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .carousel-control-prev, .carousel-control-next  {
+                &:hover {
+                    background-color: #00000000;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

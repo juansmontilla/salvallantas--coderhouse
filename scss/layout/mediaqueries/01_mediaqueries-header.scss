@@ -1,0 +1,173 @@
+/*<mediaqueries - header - 576px*/
+@media only screen and (min-width: 576px) {
+    header {
+        .header_container {
+            height: auto;
+            padding: 10px 0;
+        
+            .header_content {
+                margin: 0 7%;
+
+                .logo_container {
+                    .logo {
+                        width: 70px;
+                    }
+                }
+
+                .header_nav_responsive_container {
+                    top: 50px;
+                }
+            } 
+        }
+    }
+}
+
+/*<mediaqueries - header - 768px*/
+@media only screen and (min-width: 768px) {
+    header {
+        .header_container {
+            padding: 15px 0;
+        
+            .header_content {
+                margin: 0 8%;
+
+                .logo_container {
+                    .logo {
+                        width: 70px;
+                    }
+                }
+
+                .checkbtn {
+                    display: none;
+                }
+
+                .header_nav_container {
+                    display: inline-block;
+
+
+                    .header_nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 40px;
+                        margin: 0;
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 110%;
+                            transition: color 0.2s ease-in-out;
+
+                            &:hover {
+                                color: nth($list: $paleta-de-colores, $n:3 );
+                            }
+
+                            .active-header {
+                                color: nth($list: $paleta-de-colores, $n:3 );
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+/*<mediaqueries - header - 950px*/
+@media only screen and (min-width: 950px) {
+    header {
+        .header_container {
+            padding: 15px 0;
+        
+            .header_content {
+                margin: 0 12%;
+
+                .logo_container {
+                    .logo {
+                        width: 80px;
+                    }
+                }
+
+                .checkbtn {
+                    display: none;
+                }
+
+                .header_nav_container {
+                    display: inline-block;
+
+                    .header_nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 40px;
+                        margin: 0;
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 120%;
+                            transition: color 0.2s ease-in-out;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+/*<mediaqueries - header - 1200px*/
+@media only screen and (min-width: 1200px) {
+    header {
+        .header_container {
+            .header_content {
+                margin: 0 12%;
+
+                .logo_container {
+                    .logo {
+                        width: 130px;
+                    }
+                }
+
+                .header_nav_container {
+                    .header_nav {
+                        gap: 100px;
+
+                        a {
+                            font-size: 130%;
+                            transition: color 0.2s ease-in-out;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    header {
+        .header_container {
+            .header_content {
+                margin: 0 18%;
+
+                .logo_container {
+                    .logo {
+                        width: 130px;
+                    }
+                }
+
+                .header_nav_container {
+                    .header_nav {
+                        gap: 100px;
+
+                        a {
+                            font-size: 160%;
+                            transition: color 0.2s ease-in-out;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+

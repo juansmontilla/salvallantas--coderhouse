@@ -1,0 +1,104 @@
+.contact_container {
+    width: 100vw;
+    background-color: nth($list: $paleta-de-colores, $n:1 );
+    background-image: url(..//media/images/[fondo]---richi.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .contact_background {
+        height: 100%;
+        background: nth($list: $linear-background, $n:1 );
+        padding: 20px 0;
+
+        .contact_content {
+            margin: 0 6.25%;
+            padding: 20px;
+            background-color: nth($list: $paleta-de-colores, $n:2 );
+            border-radius: 5px;
+            @include flex(column, center, auto, 20px);
+
+            h2 {
+                @extend %h2-style;
+                font-size: nth($list: $hx-font-size, $n:1 );
+                color: nth($list: $linear-background, $n:1 );
+            }
+
+            p {
+                @extend %p-style;
+                font-size: nth($list: $p-font-size, $n:1 );
+                color: nth($list: $linear-background, $n:1 );
+            }
+
+            .contact_logo {
+                display: none;
+            }
+            
+        }
+
+        .contact_form {
+            margin-top: 5%;
+            width: 100%;
+            font-family: montserrat;
+
+            #form {
+
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+
+                    #suscribirse {
+                        width: 20px;
+                        margin-top: 10px;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    box-sizing: border-box;
+                    border: 1px solid nth($list: $paleta-de-colores, $n: 7);
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    @extend input;
+                }
+
+                button {
+                    background-color: nth($list: $paleta-de-colores, $n: 3);
+                    color: nth($list: $paleta-de-colores, $n: 2);
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 100%;
+                }
+
+                .subscribe-contact_index {
+                    margin:10px 0;
+                    #suscribirse{
+                        margin: 0;  
+                    } 
+                }
+            }
+        }
+
+        .contact_icons {
+            margin-top: 5%;
+            width: 100%;
+            @include flex(column, flex-start, flex-start, 2px);
+
+            .contact_item {
+                @include flex(row, center, space-between, 10px);
+                margin: 10px 0;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}

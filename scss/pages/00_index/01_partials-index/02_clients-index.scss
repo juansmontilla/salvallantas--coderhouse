@@ -1,0 +1,29 @@
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.clients {
+    background-color: nth($list: $paleta-de-colores, $n: 6);
+    overflow: hidden;
+    white-space: nowrap;
+
+    .clients-slider {
+        display: inline-block;
+        animation: 25s slide infinite linear;
+
+        img {
+            height: 70px;
+            margin: 0px 20px;
+        }
+
+        .img_blur {
+            filter: grayscale(100%);
+        }
+    }
+}

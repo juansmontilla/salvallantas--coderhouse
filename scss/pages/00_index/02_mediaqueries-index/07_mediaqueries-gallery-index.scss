@@ -1,0 +1,124 @@
+@media only screen and (min-width: 576px) {
+    .main-index {
+        .image_galery_container {
+            width: 100%;
+        
+            .image_galery_content {
+                margin: 40px 7%;
+        
+                h2 {
+                    font-size: nth($list: $hx-font-size, $n: 1)
+                }
+        
+                a {
+                    font-size: nth($list: $p-font-size, $n: 2);
+                    margin-top: 5%;
+                }
+        
+                .image_item_container {
+                    @include auto-grid(25px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-index {
+        .image_galery_container {
+            width: 100%;
+        
+            .image_galery_content {
+                margin: 40px 8%;
+        
+                h2 {
+                    font-size: nth($list: $hx-font-size, $n:2 )
+                }
+        
+                a {
+                    font-size: nth($list: $p-font-size, $n: 3);
+                    margin-top: 5%;
+                }
+        
+                .image_item_container {
+                    @include auto-grid(25px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .main-index {
+        .image_galery_container {
+            width: 100%;
+        
+            .image_galery_content {
+                margin: 40px 12%;
+        
+                h2 {
+                    font-size: nth($list: $hx-font-size, $n:2 )
+                }
+        
+                a {
+                    font-size: nth($list: $p-font-size, $n: 3);
+                    margin-top: 5%;
+                }
+        
+                .image_item_container {
+                    @include auto-grid(25px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-index {
+        .image_galery_container {
+            width: 100%;
+        
+            .image_galery_content {
+                margin: 40px 14%;
+        
+                h2 {
+                    font-size: nth($list: $hx-font-size, $n:4 )
+                }
+        
+                a {
+                    font-size: nth($list: $p-font-size, $n: 3);
+                    margin-top: 5%;
+                }
+        
+                .image_item_container {
+                    @include auto-grid(25px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .main-index {
+        .image_galery_container {
+            width: 100%;
+        
+            .image_galery_content {
+                margin: 40px 18%;
+        
+                h2 {
+                    font-size: nth($list: $hx-font-size, $n:5 )
+                }
+        
+                a {
+                    font-size: nth($list: $p-font-size, $n: 3);
+                    margin-top: 5%;
+                }
+        
+                .image_item_container {
+                    @include auto-grid(25px);
+                }
+            }
+        }
+    }
+}

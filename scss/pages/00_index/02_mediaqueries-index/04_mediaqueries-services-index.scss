@@ -1,0 +1,303 @@
+@media only screen and (min-width: 576px) {
+    .main-index {
+        .services_container {
+        
+            .services_container_background {
+                height: 100%;
+                background: nth($list: $linear-background, $n: 1 );
+        
+                .services_content_container {
+                    margin: 0px 7%;
+                    padding: 40px 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:2 )
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:2 );
+                        margin-top: 20px;
+                    }
+        
+                    .services_btn_container {
+                        margin-top: 10%;
+                        height: 30px;
+                        @include flex (auto, center, center, auto);
+                        flex-wrap: nowrap;
+                        text-align: center;
+                        border-radius: 5px;
+            
+                        a {
+                            font-size: nth($list: $p-font-size, $n: 2);
+                        }
+                    } 
+        
+                    .services_cards_container {
+                        margin-top: 15%;
+                        #carouselExample {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .services_cards_background {
+                                        height: 18rem;
+                                        border-radius: 5px;
+                                        @include flex (auto, end, center, auto);
+
+                                        .services_cards_content {
+                                            padding: 3%;
+                                            border-radius: 0 0 5px 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-index {
+        .services_container {
+            .services_container_background {
+                .services_content_container {
+                    margin: 0px 8%;
+                    padding: 40px 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:3 )
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:2 );
+                        margin-top: 20px;
+                    }
+        
+                    .services_btn_container {
+                        margin-top: 10%;
+                        height: 30px;
+                        @include flex (auto, center, center, auto);
+                        flex-wrap: nowrap;
+                        text-align: center;
+                        border-radius: 5px;
+            
+                        a {
+                            font-size: nth($list: $p-font-size, $n: 2);
+                        }
+                    } 
+        
+                    .services_cards_container {
+                        margin-top: 15%;
+                        #carouselExample {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .services_cards_background {
+                                        height: 22rem;
+                                        border-radius: 5px;
+                                        @include flex (auto, end, center, auto);
+            
+                                        .services_cards_content {
+                                            background-color: nth($list: $paleta-de-colores, $n:6 );
+                                            width: 100%;
+                                            text-align: center;
+                                            padding: 3%;
+                                            border-radius: 0 0 5px 5px;
+                                            z-index: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .main-index {
+        .services_container {
+            .services_container_background {
+                .services_content_container {
+                    margin: 0px 12%;
+                    padding: 40px 0;
+                    @include flex (row, center, space-between, 30px);
+                    flex-wrap: wrap;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:3 );
+                        width: 100%;
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:2 );
+                        width: 100%;
+                        margin-top: 0px;
+                    }
+        
+                    .services_btn_container {
+                        width: 50%;
+                        margin-top: 0;
+                        height: 30px;
+                        @include flex (row, center, center, inherit);
+                        flex-wrap: nowrap;
+                        text-align: center;
+                        border-radius: 5px;
+            
+                        a {
+                            font-size: nth($list: $p-font-size, $n: 2);
+                        }
+                    } 
+        
+                    .services_cards_container {
+                        width: 45%;
+                        margin-top: 0;
+                        #carouselExample {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .services_cards_background {
+                                        height: 12rem;
+                                        border-radius: 5px;
+                                        @include flex (auto, end, center, auto);
+
+                                        .services_cards_content {
+                                            padding: 3%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-index {
+        .services_container {
+            .services_container_background {
+                .services_content_container {
+                    margin: 0px 14%;
+                    padding: 80px 0;
+                    @include flex (row, center, space-between, 0px);
+                    flex-wrap: wrap;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:3 );
+                        width: 100%;
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:3 );
+                        width: 100%;
+                        margin-top: 0px;
+                    }
+        
+                    .services_btn_container {
+                        justify-self: flex-start;
+                        margin-top: 0;
+                        height: 40px;
+                        @include flex (row, center, center, inherit);
+                        flex-wrap: nowrap;
+                        text-align: center;
+                        border-radius: 5px;
+            
+                        a {
+                            font-size: nth($list: $p-font-size, $n: 2);
+                        }
+                    } 
+        
+                    .services_cards_container {
+                        margin-top: 0;
+                        #carouselExample {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .services_cards_background {
+                                        height: 14rem;
+                                        border-radius: 5px;
+                                        @include flex (auto, end, center, auto);
+
+                                        .services_cards_content {
+                                            padding: 3%;
+
+                                            h4 {
+                                                font-size: nth($list: $p-font-size, $n:2 );
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-index {
+        .services_container {
+            .services_container_background {
+                .services_content_container {
+                    margin: 0px 14%;
+                    padding: 80px 0;
+                    @include flex (row, center, space-between, 30px);
+                    flex-wrap: wrap;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:4 );
+                        width: 100%;
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:3 );
+                        width: 100%;
+                        margin-top: 0px;
+                    }
+        
+                    .services_btn_container {
+                        justify-self: flex-start;
+                        margin-top: 0;
+                        height: 50px;
+                        @include flex (row, center, center, inherit);
+                        flex-wrap: nowrap;
+                        text-align: center;
+                        border-radius: 5px;
+            
+                        a {
+                            font-size: nth($list: $p-font-size, $n: 4);
+                        }
+                    } 
+        
+                    .services_cards_container {
+                        margin-top: 0;
+                        #carouselExample {
+                            .carousel-inner {
+                                .carousel-item {
+                                    .services_cards_background {
+                                        height: 14rem;
+                                        border-radius: 5px;
+                                        @include flex (auto, end, center, auto);
+
+                                        .services_cards_content {
+                                            padding: 3%;
+
+                                            h4 {
+                                                font-size: nth($list: $p-font-size, $n:3 );
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
