@@ -1,0 +1,128 @@
+.main-servicios {
+    .servicios_container {
+        width: 100vw;
+        background-color: nth($list: $paleta-de-colores, $n: 2);
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        .servicios_container_background {
+            height: 100%;
+    
+            .servicios_content_container {
+                margin: 0px 6.25%;
+                padding: 40px 0;
+    
+                h2 {
+                    @extend %h2-style;
+                    color: nth($list: $paleta-de-colores, $n:1 );
+                    font-size: nth($list: $hx-font-size, $n:1 )
+                }
+    
+                p {
+                    @extend %p-style;
+                    font-size: nth($list: $p-font-size, $n:1 );
+                    color: nth($list: $paleta-de-colores, $n:1 );
+                    margin-top: 20px;
+                }
+    
+                .servicios_cards_container {
+                    margin-top: 15%;
+                    @include auto-grid (20px);
+    
+                    .servicios_cards_background {
+                        height: 250px;
+                        border-radius: 5px;
+                        @include flex (auto, end, center, auto);
+                        position: relative;
+    
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0px;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            border-radius: 5px;
+                        }
+    
+                        .servicios_cards_content {
+                            background-color: nth($list: $paleta-de-colores, $n:3 );
+                            width: 100%;
+                            text-align: center;
+                            padding: 3%;
+                            border-radius: 0 0 5px 5px;
+                            z-index: 1;
+    
+                            h4 {
+                                color: nth($list: $paleta-de-colores, $n:2 );
+                            }
+                        }
+                    }
+    
+                    .srvcrd_1 {
+                        background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-llantas.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: background-size 0.3s ease-in-out;
+    
+                        &:hover {
+                            background-size: 110%;
+                        }
+                    }
+    
+                    .srvcrd_2 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-rines.png);
+                    }
+    
+                    .srvcrd_3 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-pintura_electrostatica_rin.png);
+                    }
+    
+                    .srvcrd_4 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-pintura.png);
+                    }
+    
+                    .srvcrd_5 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-maquinado-o-diamantado.png);
+                    }
+    
+                    .srvcrd_6 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-soldadura-especializada-de-rines.png);
+                    }
+    
+                    .srvcrd_7 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-llantas.png);
+                    }
+    
+                    .srvcrd_8 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-extraccion-de-pernos.png);
+                    }
+    
+                    .srvcrd_9 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-mecanica-rapida.png);
+                    }
+    
+                    .srvcrd_10 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-montaje-llantas-blindadas.png);
+                    }
+    
+                    .srvcrd_11 {
+                        @extend .srvcrd_1;
+                        background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-llantas.png);
+                    }
+                }
+            }
+        }
+    }
+}

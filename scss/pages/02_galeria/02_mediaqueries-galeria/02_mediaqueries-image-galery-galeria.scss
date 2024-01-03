@@ -1,0 +1,96 @@
+@media only screen and (min-width: 576px) {
+    .main-galeria {
+        .galeria_container {
+            width: 100vw;
+        
+            .galeria_container_background {
+                height: 100%;
+        
+                .galeria_content_container {
+                    margin: 0px 7%;
+                    padding: 40px 0;
+        
+                    .galeria_cards_container {
+                        margin-top: 5%;
+        
+                        .galeria_cards_background {
+                            height: 300px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-galeria {
+        .galeria_container {
+            .galeria_container_background {
+                .galeria_content_container {
+                    margin: 0px 8%;
+        
+                    .galeria_cards_container {
+                        .galeria_cards_background {
+                            height: 300px;
+                            border-radius: 5px;
+                        }
+
+                        .glrcrd-3, .glrcrd-6 {
+                            grid-column: auto/span 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 950px) {
+    .main-galeria {
+        .galeria_container {
+            .galeria_container_background {
+                .galeria_content_container {
+                    margin: 0px 12%;
+        
+                    .galeria_cards_container {
+                        .galeria_cards_background {
+                            height: 300px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-galeria {
+        .galeria_container {
+            .galeria_container_background {
+                .galeria_content_container {
+                    margin: 0px 14%;
+        
+                    .galeria_cards_container {
+                        .galeria_cards_background {
+                            height: 300px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .glrcrd-2 {
+                        grid-column: auto/span 3;
+                    }
+
+                    .glrcrd-10 {
+                        grid-column: auto/span 3;
+                    }
+                }
+            }
+        }
+    }
+}
+

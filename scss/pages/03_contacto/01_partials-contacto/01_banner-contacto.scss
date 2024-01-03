@@ -1,0 +1,46 @@
+.main-contacto {
+    .banner_container {
+        width: 100vw;
+        height: auto;
+        background-color: nth($list: $paleta-de-colores, $n:1 );
+        background-image: url(../media/images/contacto-fondo.png);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+
+        .banner_container_background {
+            height: 100%;
+            background: nth($list: $linear-background, $n: 1);
+            @include flex (auto, center, center, auto);
+
+            .banner_content_container {
+                height: 100%;
+                margin: 0 6.25%;
+                padding: 40px 0;
+                @include flex (column, auto, center, 50px);
+
+                .banner_text_container {
+                    @include flex (column, center, space-between, 20px);
+
+                    h1 {
+                        @extend %h2-style;
+                        font-size: nth($list: $hx-font-size, $n:1 );
+                        color: nth($list: $paleta-de-colores, $n: 2);
+                        
+                        .h_bold {
+                            color: nth($list: $paleta-de-colores, $n: 3);
+                        }
+
+                    }
+            
+                    p {
+                        @extend %p-style;
+                        font-size: nth($list: $p-font-size, $n: 1 );
+                        color: nth($list: $paleta-de-colores, $n:4);
+                    }
+                }
+            }
+        }
+    
+    }    
+}

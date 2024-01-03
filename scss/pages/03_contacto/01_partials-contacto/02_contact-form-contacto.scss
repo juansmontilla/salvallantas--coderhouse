@@ -1,0 +1,101 @@
+.main-contacto {
+    .contacto_container {
+        width: 100vw;
+    
+        .contacto_container_background {
+            height: 100%;
+    
+            .contacto_content_container {
+                margin: 0px 6.25%;
+                padding: 40px 0;
+    
+                h2 {
+                    @extend %h2-style;
+                    color: nth($list: $paleta-de-colores, $n:1 );
+                    font-size: nth($list: $hx-font-size, $n:1 )
+                }
+    
+                p {
+                    @extend %p-style;
+                    font-size: nth($list: $p-font-size, $n:1 );
+                    color: nth($list: $paleta-de-colores, $n:1 );
+                    margin-top: 20px;
+                }
+
+                .contacto_formulario_container {
+                    .contacto_formulario_background {
+                        background-color: nth($list: $paleta-de-colores, $n:6 );
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-top: 5%;
+                        .contacto_formulario_content {
+                            .contact_form {
+                                margin-top: 5%;
+                                width: 100%;
+                                font-family: montserrat;
+                    
+                                #form {
+                    
+                                    label {
+                                        display: block;
+                                        margin-bottom: 8px;
+                    
+                                        #suscribirse {
+                                            width: 20px;
+                                            margin-top: 10px;
+                                        }
+                                    }
+                    
+                                    input {
+                                        width: 100%;
+                                        padding: 8px;
+                                        margin-bottom: 16px;
+                                        box-sizing: border-box;
+                                        border-collapse: collapse;
+                                        border: none;
+                                        border-radius: 5px;
+
+                                        &:hover{
+                                            box-sizing: border-box;
+                                            border-inline: 1px solid nth($list: $paleta-de-colores, $n:3 );
+                                        }
+
+                                        
+                                        &:focus {
+                                            border: 1px solid nth($list: $paleta-de-colores, $n: 3);
+                                        }
+                                    }
+
+                                    select {
+                                        @extend input;
+                                    }
+                    
+                                    textarea {
+                                        @extend input;
+                                    }
+                    
+                                    button {
+                                        background-color: nth($list: $paleta-de-colores, $n: 3);
+                                        color: nth($list: $paleta-de-colores, $n: 2);
+                                        padding: 10px 15px;
+                                        border: none;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        width: 100%;
+                                    }
+                    
+                                    .subscribe-contact_index {
+                                        margin:10px 0;
+                                        #suscribirse{
+                                            margin: 0;  
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

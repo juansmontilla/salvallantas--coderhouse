@@ -1,0 +1,75 @@
+.main-galeria {
+    .galeria_container {
+        width: 100vw;
+    
+        .galeria_container_background {
+            height: 100%;
+    
+            .galeria_content_container {
+                margin: 0px 6.25%;
+                padding: 40px 0;
+    
+                .galeria_cards_container {
+                    margin-top: 15%;
+                    @include auto-grid (20px);
+    
+                    .galeria_cards_background {
+                        height: 300px;
+                        border-radius: 5px;
+                    }
+
+                    .glrcrd-1 {
+                        background-image: url(..//media/images/galeria/galeria-1.JPG) ;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .glrcrd-2 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-2.JPG) ;
+                    }
+
+                    .glrcrd-3 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-3.JPG) ;
+                    }
+
+                    .glrcrd-4 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-4.JPG) ;
+                    }
+
+                    .glrcrd-5 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-5.JPG) ;
+                    }
+
+                    .glrcrd-6 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-6.JPG) ;
+                    }
+
+                    .glrcrd-7 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-7.JPG) ;
+                    }
+
+                    .glrcrd-8 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-8.JPG) ;
+                    }
+
+                    .glrcrd-9 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-9.JPG) ;
+                    }
+
+                    .glrcrd-10 {
+                        @extend .glrcrd-1;
+                        background-image: url(..//media/images/galeria/galeria-10.JPG) ;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -79,13 +79,13 @@ a {
 /*list*/
 /*maps*/
 /*mixin*/
-.faq_container .faq_content_container .faq_content h2, .contact_container .contact_background .contact_content h2, .image_galery_container .image_galery_content h2, .testimony_container .testimony_content_container .testimony_content h2, .services_container .services_container_background .services_content_container h2, .main-index .experience_container .experience_content h2, .main-index .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container h2, .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1, .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1, .main-servicios .servicios_container .servicios_container_background .servicios_content_container h2, .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1, .faq_container .faq_content_container .faq_content h2, .contact_container .contact_background .contact_content h2, .image_galery_container .image_galery_content h2, .testimony_container .testimony_content_container .testimony_content h2, .services_container .services_container_background .services_content_container h2, .main-index .experience_container .experience_content h2, .main-index .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
   font-weight: bold;
   color: #252525;
   line-height: 120%;
 }
 
-.faq_container .faq_content_container .faq_content p, .contact_container .contact_background .contact_content p, .testimony_container .testimony_content_container .testimony_content p, .services_container .services_container_background .services_content_container p, .main-index .experience_container .experience_content p, .main-index .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container p, .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p, .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p, .main-servicios .servicios_container .servicios_container_background .servicios_content_container p, .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p, .faq_container .faq_content_container .faq_content p, .contact_container .contact_background .contact_content p, .testimony_container .testimony_content_container .testimony_content p, .services_container .services_container_background .services_content_container p, .main-index .experience_container .experience_content p, .main-index .banner_container .banner_container_background .banner_content_container .banner_text_container p {
   font-weight: 400;
   line-height: 150%;
 }
@@ -192,6 +192,9 @@ header .header_container .header_nav_container {
   font-size: 100%;
 }
 .footer_container .footer_content_container .footer_content .footer_nav_container .footer_nav a:hover {
+  color: #252525;
+}
+.footer_container .footer_content_container .footer_content .footer_nav_container .footer_nav a .active-footer {
   color: #252525;
 }
 .footer_container .footer_content_container .footer_content .footer_icons {
@@ -712,7 +715,7 @@ header .header_container .header_nav_container {
   width: 20px;
   margin-top: 10px;
 }
-.contact_container .contact_background .contact_form #form input, .contact_container .contact_background .contact_form #form textarea {
+.contact_container .contact_background .contact_form #form input, .contact_container .contact_background .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form textarea, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_container .contact_background .contact_form #form textarea, .contact_container .contact_background .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form select, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_container .contact_background .contact_form #form select, .contact_container .contact_background .contact_form #form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
@@ -803,6 +806,391 @@ header .header_container .header_nav_container {
 }
 
 /* </FAQ's> */
+.main-servicios .banner_container {
+  width: 100vw;
+  height: auto;
+  background-color: #252525;
+  background-image: url(../media/images/servicios-fondos.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-servicios .banner_container .banner_container_background {
+  height: 100%;
+  background: linear-gradient(89deg, #242424 25%, rgba(37, 37, 37, 0.94) 57.19%, rgba(44, 43, 43, 0.62) 81.11%, rgba(58, 54, 54, 0) 102.23%);
+  display: flex;
+  flex-direction: auto;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container {
+  height: 100%;
+  margin: 0 6.25%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  justify-content: center;
+  gap: 50px;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+  font-size: 250%;
+  color: #fff;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 .h_bold {
+  color: #ff0000;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+  font-size: 110%;
+  color: #fcfcfc;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+  display: flex;
+  flex-direction: auto;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+  background-color: #e20606;
+  color: #fff;
+  height: 35px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 100%;
+  transition: background-color 0.2s ease-in-out, font-size 0.2s ease-out;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a:hover {
+  font-size: 110%;
+  background-color: #ff0000;
+}
+.main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+  display: none;
+}
+
+.main-servicios .servicios_container {
+  width: 100vw;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-servicios .servicios_container .servicios_container_background {
+  height: 100%;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container {
+  margin: 0px 6.25%;
+  padding: 40px 0;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container h2 {
+  color: #252525;
+  font-size: 250%;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container p {
+  font-size: 110%;
+  color: #252525;
+  margin-top: 20px;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background {
+  height: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: auto;
+  align-items: end;
+  justify-content: center;
+  gap: auto;
+  position: relative;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content {
+  background-color: #ff0000;
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content h4 {
+  color: #fff;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_1, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_11, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_10, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_9, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_8, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_7, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_6, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_5, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_4, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_3, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_2 {
+  background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-llantas.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-size 0.3s ease-in-out;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_1:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_11:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_10:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_9:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_8:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_7:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_6:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_5:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_4:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_3:hover, .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_2:hover {
+  background-size: 110%;
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_2 {
+  background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-rines.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_3 {
+  background-image: url(..//media/images/services/servicios/salvallantas-pintura_electrostatica_rin.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_4 {
+  background-image: url(..//media/images/services/servicios/salvallantas-pintura.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_5 {
+  background-image: url(..//media/images/services/servicios/salvallantas-maquinado-o-diamantado.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_6 {
+  background-image: url(..//media/images/services/servicios/salvallantas-soldadura-especializada-de-rines.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_7 {
+  background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-llantas.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_8 {
+  background-image: url(..//media/images/services/servicios/salvallantas-extraccion-de-pernos.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_9 {
+  background-image: url(..//media/images/services/servicios/salvallantas-mecanica-rapida.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_10 {
+  background-image: url(..//media/images/services/servicios/salvallantas-montaje-llantas-blindadas.png);
+}
+.main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .srvcrd_11 {
+  background-image: url(..//media/images/services/servicios/salvallantas-reparacion-de-llantas.png);
+}
+
+.main-galeria .banner_container {
+  width: 100vw;
+  height: auto;
+  background-color: #252525;
+  background-image: url(../media/images/galerias-fondo.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.main-galeria .banner_container .banner_container_background {
+  height: 100%;
+  background: linear-gradient(89deg, #242424 25%, rgba(37, 37, 37, 0.94) 57.19%, rgba(44, 43, 43, 0.62) 81.11%, rgba(58, 54, 54, 0) 102.23%);
+  display: flex;
+  flex-direction: auto;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+}
+.main-galeria .banner_container .banner_container_background .banner_content_container {
+  height: 100%;
+  margin: 0 6.25%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  justify-content: center;
+  gap: 50px;
+}
+.main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+  font-size: 250%;
+  color: #fff;
+}
+.main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 .h_bold {
+  color: #ff0000;
+}
+.main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+  font-size: 110%;
+  color: #fcfcfc;
+}
+
+.main-galeria .galeria_container {
+  width: 100vw;
+}
+.main-galeria .galeria_container .galeria_container_background {
+  height: 100%;
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container {
+  margin: 0px 6.25%;
+  padding: 40px 0;
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .galeria_cards_background {
+  height: 300px;
+  border-radius: 5px;
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-1, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-10, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-9, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-8, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-7, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-6, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-5, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-4, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-3, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-2 {
+  background-image: url(..//media/images/galeria/galeria-1.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-2 {
+  background-image: url(..//media/images/galeria/galeria-2.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-3 {
+  background-image: url(..//media/images/galeria/galeria-3.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-4 {
+  background-image: url(..//media/images/galeria/galeria-4.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-5 {
+  background-image: url(..//media/images/galeria/galeria-5.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-6 {
+  background-image: url(..//media/images/galeria/galeria-6.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-7 {
+  background-image: url(..//media/images/galeria/galeria-7.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-8 {
+  background-image: url(..//media/images/galeria/galeria-8.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-9 {
+  background-image: url(..//media/images/galeria/galeria-9.JPG);
+}
+.main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-10 {
+  background-image: url(..//media/images/galeria/galeria-10.JPG);
+}
+
+.main-contacto .banner_container {
+  width: 100vw;
+  height: auto;
+  background-color: #252525;
+  background-image: url(../media/images/contacto-fondo.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.main-contacto .banner_container .banner_container_background {
+  height: 100%;
+  background: linear-gradient(89deg, #242424 25%, rgba(37, 37, 37, 0.94) 57.19%, rgba(44, 43, 43, 0.62) 81.11%, rgba(58, 54, 54, 0) 102.23%);
+  display: flex;
+  flex-direction: auto;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+}
+.main-contacto .banner_container .banner_container_background .banner_content_container {
+  height: 100%;
+  margin: 0 6.25%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  justify-content: center;
+  gap: 50px;
+}
+.main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+  font-size: 250%;
+  color: #fff;
+}
+.main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 .h_bold {
+  color: #ff0000;
+}
+.main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+  font-size: 110%;
+  color: #fcfcfc;
+}
+
+.main-contacto .contacto_container {
+  width: 100vw;
+}
+.main-contacto .contacto_container .contacto_container_background {
+  height: 100%;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container {
+  margin: 0px 6.25%;
+  padding: 40px 0;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container h2 {
+  color: #252525;
+  font-size: 250%;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container p {
+  font-size: 110%;
+  color: #252525;
+  margin-top: 20px;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background {
+  background-color: #EDEDED;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form {
+  margin-top: 5%;
+  width: 100%;
+  font-family: montserrat;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form label {
+  display: block;
+  margin-bottom: 8px;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form label #suscribirse {
+  width: 20px;
+  margin-top: 10px;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form input, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form textarea, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 5px;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form input:hover, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form textarea:hover, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form select:hover {
+  box-sizing: border-box;
+  border-inline: 1px solid #ff0000;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form input:focus, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form textarea:focus, .main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form select:focus {
+  border: 1px solid #ff0000;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .subscribe-contact_index {
+  margin: 10px 0;
+}
+.main-contacto .contacto_container .contacto_container_background .contacto_content_container .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .subscribe-contact_index #suscribirse {
+  margin: 0;
+}
+
 /*<mediaqueries - header - 576px*/
 @media only screen and (min-width: 576px) {
   header .header_container {
@@ -891,7 +1279,7 @@ header .header_container .header_nav_container {
 /*<mediaqueries - header - 1200px*/
 @media only screen and (min-width: 1200px) {
   header .header_container .header_content {
-    margin: 0 12%;
+    margin: 0 14%;
   }
   header .header_container .header_content .logo_container .logo {
     width: 130px;
@@ -2418,6 +2806,1125 @@ header .header_container .header_nav_container {
   .main-index .faq_container .faq_content_container .faq_questions .accordion .accordion-item .accordion-collapse .accordion-body {
     padding: 10px;
     font-size: 110%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-servicios .banner_container {
+    height: 72vh;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container {
+    margin: 0 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 80px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 300%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-servicios .banner_container {
+    height: 90vh;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container {
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 90px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 350%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 140%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 50px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 70%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    font-size: 110%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: center;
+    justify-content: auto;
+    gap: 5px;
+    flex-shrink: 1;
+    transition: gap 0.5s ease-in-out;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 20px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 110%;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    color: #ff0000;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-servicios .banner_container {
+    background-size: 140%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container {
+    margin: 0 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 100px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 400%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 160%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 160px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 50%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    font-size: 120%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: auto;
+    gap: 10px;
+    flex-shrink: 1;
+    color: #ff0000;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 30px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    margin: 0;
+    font-size: 120%;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    color: #ff0000;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-servicios .banner_container .banner_container_background .banner_content_container {
+    padding-top: 0%;
+    margin: 0 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 550%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 170%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justify-content;
+    gap: 100px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 70%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    height: 50px;
+    font-size: 140%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: auto;
+    gap: 10px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    margin: 0;
+    font-size: 140%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    gap: 50px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .main-servicios .banner_container {
+    height: 100vh;
+    background-size: 130%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: space-evenly;
+    gap: auto;
+    padding: 0;
+    margin: 0 18%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    flex-shrink: 1;
+    gap: 30px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 850%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 230%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    height: 70px;
+    font-size: 190%;
+    transition: font-size 0.2s ease-out;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a:hover {
+    font-size: 195%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    align-items: center;
+    flex-shrink: 1;
+    gap: 5px;
+    transition: gap 0.5s ease-in-out;
+    color: #ff0000;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 40px;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    font-size: 190%;
+  }
+  .main-servicios .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-servicios .servicios_container .servicios_container_background {
+    height: 100%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container {
+    margin: 0px 7%;
+    padding: 40px 0;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container h2 {
+    font-size: 300%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container p {
+    font-size: 120%;
+    margin-top: 20px;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container {
+    margin-top: 5%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background {
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: auto;
+    align-items: end;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content {
+    padding: 3%;
+    border-radius: 0 0 5px 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container {
+    margin: 0px 8%;
+    padding: 40px 0;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container h2 {
+    font-size: 350%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container p {
+    font-size: 120%;
+    margin-top: 20px;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: auto;
+    align-items: end;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content {
+    padding: 5%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content h4 {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container {
+    margin: 0px 12%;
+    padding: 40px 0 0;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container h2 {
+    font-size: 350%;
+    width: 100%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container p {
+    font-size: 120%;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: auto;
+    align-items: end;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content {
+    padding: 5%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content h4 {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container {
+    margin: 0px 14%;
+    padding: 80px 0;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container h2 {
+    font-size: 400%;
+    width: 100%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container p {
+    font-size: 160%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: auto;
+    align-items: end;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content {
+    padding: 5%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content h4 {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container {
+    margin: 0px 14%;
+    padding: 80px 0;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container h2 {
+    font-size: 350%;
+    width: 100%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container p {
+    font-size: 140%;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: auto;
+    align-items: end;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content {
+    padding: 5%;
+  }
+  .main-servicios .servicios_container .servicios_container_background .servicios_content_container .servicios_cards_container .servicios_cards_background .servicios_cards_content h4 {
+    font-size: 140%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-galeria .banner_container {
+    height: 72vh;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container {
+    margin: 0 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 80px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 300%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-galeria .banner_container {
+    height: 90vh;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container {
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 90px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 350%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 140%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 50px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 70%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    font-size: 110%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: center;
+    justify-content: auto;
+    gap: 5px;
+    flex-shrink: 1;
+    transition: gap 0.5s ease-in-out;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 20px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 110%;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    color: #ff0000;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-galeria .banner_container {
+    background-size: 140%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container {
+    margin: 0 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 100px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 400%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 160%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 160px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 50%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    font-size: 120%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: auto;
+    gap: 10px;
+    flex-shrink: 1;
+    color: #ff0000;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 30px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    margin: 0;
+    font-size: 120%;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    color: #ff0000;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-galeria .banner_container .banner_container_background .banner_content_container {
+    padding-top: 0%;
+    margin: 0 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 550%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 170%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justify-content;
+    gap: 100px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 70%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    height: 50px;
+    font-size: 140%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: auto;
+    gap: 10px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    margin: 0;
+    font-size: 140%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    gap: 50px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .main-galeria .banner_container {
+    height: 100vh;
+    background-size: 130%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: space-evenly;
+    gap: auto;
+    padding: 0;
+    margin: 0 18%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    flex-shrink: 1;
+    gap: 30px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 850%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 230%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    height: 70px;
+    font-size: 190%;
+    transition: font-size 0.2s ease-out;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a:hover {
+    font-size: 195%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    align-items: center;
+    flex-shrink: 1;
+    gap: 5px;
+    transition: gap 0.5s ease-in-out;
+    color: #ff0000;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 40px;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    font-size: 190%;
+  }
+  .main-galeria .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-galeria .galeria_container {
+    width: 100vw;
+  }
+  .main-galeria .galeria_container .galeria_container_background {
+    height: 100%;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container {
+    margin: 0px 7%;
+    padding: 40px 0;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container {
+    margin-top: 5%;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .galeria_cards_background {
+    height: 300px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container {
+    margin: 0px 8%;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .galeria_cards_background {
+    height: 300px;
+    border-radius: 5px;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-3, .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .glrcrd-6 {
+    grid-column: auto/span 2;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container {
+    margin: 0px 12%;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .galeria_cards_background {
+    height: 300px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container {
+    margin: 0px 14%;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .galeria_cards_container .galeria_cards_background {
+    height: 300px;
+    border-radius: 5px;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .glrcrd-2 {
+    grid-column: auto/span 3;
+  }
+  .main-galeria .galeria_container .galeria_container_background .galeria_content_container .glrcrd-10 {
+    grid-column: auto/span 3;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-contacto .banner_container {
+    height: 72vh;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container {
+    margin: 0 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 80px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 300%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacto .banner_container {
+    height: 90vh;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container {
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 90px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 350%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 140%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 50px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 70%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    font-size: 110%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: center;
+    justify-content: auto;
+    gap: 5px;
+    flex-shrink: 1;
+    transition: gap 0.5s ease-in-out;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 20px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 110%;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    color: #ff0000;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-contacto .banner_container {
+    background-size: 140%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container {
+    margin: 0 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: 100px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 400%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 160%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 160px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 50%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    font-size: 120%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: auto;
+    gap: 10px;
+    flex-shrink: 1;
+    color: #ff0000;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 30px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    margin: 0;
+    font-size: 120%;
+    transition: color 0.5s ease-in-out;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    color: #ff0000;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-contacto .banner_container .banner_container_background .banner_content_container {
+    padding-top: 0%;
+    margin: 0 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    gap: auto;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 550%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 170%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justify-content;
+    gap: 100px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary {
+    width: 70%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    height: 50px;
+    font-size: 140%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: auto;
+    gap: 10px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    margin: 0;
+    font-size: 140%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a:hover {
+    gap: 50px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .main-contacto .banner_container {
+    height: 100vh;
+    background-size: 130%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: space-evenly;
+    gap: auto;
+    padding: 0;
+    margin: 0 18%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container {
+    flex-shrink: 1;
+    gap: 30px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container h1 {
+    font-size: 850%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_text_container p {
+    font-size: 230%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a {
+    height: 70px;
+    font-size: 190%;
+    transition: font-size 0.2s ease-out;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_primary a:hover {
+    font-size: 195%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second {
+    align-items: center;
+    flex-shrink: 1;
+    gap: 5px;
+    transition: gap 0.5s ease-in-out;
+    color: #ff0000;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second:hover {
+    gap: 40px;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a {
+    font-size: 190%;
+  }
+  .main-contacto .banner_container .banner_container_background .banner_content_container .banner_btn_container .banner_btn_second a img {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main-contacto .contacto_container .contacto_container_background {
+    padding: 40px 0;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container {
+    margin: 0 7%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: auto;
+    gap: 20px;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container h2 {
+    width: 100%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container p {
+    width: 100%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background {
+    width: 100%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-contacto .contacto_container .contacto_container_background {
+    padding: 60px 0;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container {
+    margin: 0 8%;
+    padding: 20px;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container h2 {
+    font-size: 300%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container p {
+    font-size: 120%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form {
+    width: 100%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 10px;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .nombre {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #nombre {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .email {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #email {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .celular {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #celular {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .options {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #options {
+    grid-column: 3/5;
+    grid-row: 4/5;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .mensaje, .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #mensaje {
+    grid-column: 1/5;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .submit-contact_index {
+    grid-column: 1/3;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .subscribe-contact_index {
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 2px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container {
+    margin: 0 12%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container h2 {
+    font-size: 300%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container p {
+    font-size: 120%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .nombre {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #nombre {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .email {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #email {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .mensaje, .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form #mensaje {
+    grid-column: 1/5;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .submit-contact_index {
+    grid-column: 1/3;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .subscribe-contact_index {
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 2px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-contacto .contacto_container .contacto_container_background {
+    padding: 60px 0;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_content_container {
+    margin: 0 14%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form {
+    width: 100%;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 10px;
+  }
+  .main-contacto .contacto_container .contacto_container_background .contacto_formulario_container .contacto_formulario_background .contacto_formulario_content .contact_form #form .subscribe-contact_index {
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 2px;
   }
 }
 /*<mediaqueries - footer - 576px*/

@@ -40,6 +40,11 @@
                         &:hover {
                             color: nth($list: $paleta-de-colores, $n: 1);
                         }
+
+                        .active-footer {
+                            color: nth($list: $paleta-de-colores, $n:1 );
+
+                        }
                     }
 
                 }

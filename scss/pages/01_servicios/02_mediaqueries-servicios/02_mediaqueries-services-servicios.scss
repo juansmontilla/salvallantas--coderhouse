@@ -1,0 +1,195 @@
+@media only screen and (min-width: 576px) {
+    .main-servicios {
+        .servicios_container {
+        
+            .servicios_container_background {
+                height: 100%;
+        
+                .servicios_content_container {
+                    margin: 0px 7%;
+                    padding: 40px 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:2 )
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:2 );
+                        margin-top: 20px;
+                    }
+        
+                    .servicios_cards_container {
+                        margin-top: 5%;
+
+                        .servicios_cards_background {
+                            height: 300px;
+                            border-radius: 5px;
+                            @include flex (auto, end, center, auto);
+
+                            .servicios_cards_content {
+                                padding: 3%;
+                                border-radius: 0 0 5px 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-servicios {
+        .servicios_container {
+            .servicios_container_background {
+                .servicios_content_container {
+                    margin: 0px 8%;
+                    padding: 40px 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:3 )
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:2 );
+                        margin-top: 20px;
+                    }
+        
+                    .servicios_cards_container {
+                        .servicios_cards_background {
+                            border-radius: 5px;
+                            @include flex (auto, end, center, auto);
+
+                            .servicios_cards_content {
+                                padding: 5%;
+
+                                h4 {
+                                    font-size: nth($list: $p-font-size, $n: 2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 950px) {
+    .main-servicios {
+        .servicios_container {
+            .servicios_container_background {
+                .servicios_content_container {
+                    margin: 0px 12%;
+                    padding: 40px 0 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:3 );
+                        width: 100%;
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:2 );
+                        width: 100%;
+                        margin-top: 0px;
+                    }
+        
+                    .servicios_cards_container {
+                        .servicios_cards_background {
+                            border-radius: 5px;
+                            @include flex (auto, end, center, auto);
+
+                            .servicios_cards_content {
+                                padding: 5%;
+
+                                h4 {
+                                    font-size: nth($list: $p-font-size, $n: 2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-servicios {
+        .servicios_container {
+            .servicios_container_background {
+                .servicios_content_container {
+                    margin: 0px 14%;
+                    padding: 80px 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:4 );
+                        width: 100%;
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:4 );
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+        
+                    .servicios_cards_container {
+                        .servicios_cards_background {
+                            border-radius: 5px;
+                            @include flex (auto, end, center, auto);
+
+                            .servicios_cards_content {
+                                padding: 5%;
+
+                                h4 {
+                                    font-size: nth($list: $p-font-size, $n: 2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-servicios {
+        .servicios_container {
+            .servicios_container_background {
+                .servicios_content_container {
+                    margin: 0px 14%;
+                    padding: 80px 0;
+        
+                    h2 {
+                        font-size: nth($list: $hx-font-size, $n:3 );
+                        width: 100%;
+                    }
+        
+                    p {
+                        font-size: nth($list: $p-font-size, $n:3 );
+                        width: 100%;
+                        margin-top: 0px;
+                    }
+        
+                    .servicios_cards_container {
+                        .servicios_cards_background {
+                            border-radius: 5px;
+                            @include flex (auto, end, center, auto);
+
+                            .servicios_cards_content {
+                                padding: 5%;
+
+                                h4 {
+                                    font-size: nth($list: $p-font-size, $n: 3);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

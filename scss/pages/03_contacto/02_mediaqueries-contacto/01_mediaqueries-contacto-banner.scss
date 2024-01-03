@@ -1,0 +1,275 @@
+@media only screen and (min-width: 576px) {
+    .main-contacto {
+        .banner_container {
+            height: 72vh;
+    
+            .banner_container_background {
+                .banner_content_container {
+                    margin: 0 7%;
+                    @include flex (column, auto, center, 80px);
+    
+                    .banner_text_container {
+                        @include flex (column, center, space-between, 30px);
+    
+                        h1 {
+                            font-size: nth($list: $hx-font-size, $n:2 );
+                        }
+                
+                        p {
+                            font-size: nth($list: $p-font-size, $n: 2 );
+                        }
+                    }
+                }
+            }
+        
+        }    
+    }   
+}
+
+@media only screen and (min-width: 768px) {
+    .main-contacto {
+        .banner_container {
+            height: 90vh;
+    
+            .banner_container_background {
+                .banner_content_container {
+                    margin: 0 8%;
+                    @include flex (column, auto, center, 90px);
+    
+                    .banner_text_container {
+                        @include flex (column, flex-start, space-between, 40px);
+    
+                        h1 {
+                            font-size: nth($list: $hx-font-size, $n:3 );
+                        }
+                
+                        p {
+                            font-size: nth($list: $p-font-size, $n: 3 );
+                        }
+                    }
+
+                    .banner_btn_container {
+                        @include flex (row, center, auto, 50px);
+
+                        .banner_btn_primary {
+                            width: 70%;
+
+                            a {
+                                font-size: nth($list: $p-font-size, $n:1);
+                            }
+                        }
+
+                        .banner_btn_second {
+                            @include flex (auto, center, auto, 5px);
+                            flex-shrink: 1;
+                            transition: gap 0.5s ease-in-out;
+        
+                            &:hover {
+                                gap: 20px;
+                            }
+        
+                            a {
+                                color: nth($list: $paleta-de-colores, $n: 2 );
+                                text-decoration: none;
+                                font-size: nth($list: $p-font-size, $n:1);
+                                transition: color 0.5s ease-in-out;
+        
+                                &:hover {
+                                    color: nth($list: $paleta-de-colores, $n: 3 )
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        
+        }    
+    }   
+}
+
+@media only screen and (min-width: 950px) {
+    .main-contacto {
+        .banner_container {
+            background-size: 140%;
+    
+            .banner_container_background {
+                .banner_content_container {
+                    margin: 0 12%;
+                    @include flex (column, auto, center, 100px);
+    
+                    .banner_text_container {
+                        @include flex (column, flex-start, space-between, 50px);
+    
+                        h1 {
+                            font-size: nth($list: $hx-font-size, $n:4 );
+                        }
+                
+                        p {
+                            font-size: nth($list: $p-font-size, $n: 4 );
+                        }
+                    }
+
+                    .banner_btn_container {
+                        @include flex (row, center, auto, 160px);
+
+                        .banner_btn_primary {
+                            width: 50%;
+
+                            a {
+                                font-size: nth($list: $p-font-size, $n:2);
+                            }
+                        }
+
+                        .banner_btn_second {
+                            @include flex (auto, auto, auto, 10px);
+                            flex-shrink: 1;
+                            color: nth($list: $paleta-de-colores, $n: 3 );
+
+                            &:hover {
+                                gap: 30px;
+                            }
+        
+                            a {
+                                margin: 0;
+                                font-size: nth($list: $p-font-size, $n:2);
+                                transition: color 0.5s ease-in-out;
+        
+                                &:hover {
+                                    color: nth($list: $paleta-de-colores, $n: 3 );
+                                }
+
+                                img {
+                                    width:35px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }    
+    }  
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-contacto {
+        .banner_container {
+            .banner_container_background {
+                .banner_content_container {
+                    padding-top: 0%;
+                    margin: 0 14%;
+                    @include flex (column, auto, center, auto);
+    
+                    .banner_text_container {
+                        @include flex (column, flex-start, space-between, 50px);
+    
+                        h1 {
+                            font-size: nth($list: $hx-font-size, $n:5);
+                        }
+                
+                        p {
+                            font-size: nth($list: $p-font-size, $n:5);
+                        }
+                    }
+
+                    .banner_btn_container {
+                        @include flex (row, center, justify-content, 100px);
+
+                        .banner_btn_primary {
+                            width: 70%;
+
+                            a {
+                                height: 50px;
+                                font-size: nth($list: $p-font-size, $n:3);
+                            }
+                        }
+
+                        .banner_btn_second {
+                            @include flex (auto, auto, auto, 10px);
+        
+                            a {
+                                margin: 0;
+                                font-size: nth($list: $p-font-size, $n:3);
+
+                                &:hover {
+                                    gap: 50px;
+                                }
+
+                                img {
+                                    width:40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }    
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .main-contacto {
+        .banner_container {
+            height: 100vh;
+            background-size: 130%;
+
+            .banner_container_background {  
+                .banner_content_container {
+                    @include flex (auto, auto, space-evenly, auto);
+                    padding: 0;
+                    margin: 0 18%;
+
+                    .banner_text_container {
+                        flex-shrink: 1;
+                        gap: 30px;
+
+                        h1 {
+                            font-size: nth($list: $hx-font-size, $n:6);
+                        }
+                
+                        p {
+                            font-size: nth($list: $p-font-size, $n:6);
+                        }
+                    }
+
+                    .banner_btn_container {
+                        .banner_btn_primary {
+
+                            a {
+                                height: 70px;
+                                font-size: 190%;
+                                transition: font-size 0.2s ease-out;
+
+                                &:hover {
+                                    font-size: 195%;
+                                }
+                            }
+                        }
+        
+                        .banner_btn_second {
+                            align-items: center;
+                            flex-shrink: 1;
+                            gap: 5px;
+                            transition: gap 0.5s ease-in-out;
+                            color: nth($list: $paleta-de-colores, $n: 3 );
+
+                            &:hover {
+                                gap: 40px;
+                            }
+
+                            a {
+                                font-size: 190%;
+
+                                img {
+                                    width:50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
