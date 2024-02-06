@@ -44,30 +44,37 @@
                 .header_nav_container {
                     display: inline-block;
 
+                    .header_nav_navegation {
+                        .header_nav {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                            margin: 0;
+                            list-style: none;
 
-                    .header_nav {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        gap: 40px;
-                        margin: 0;
-                        list-style: none;
+                            li {
 
-                        a {
-                            text-decoration: none;
-                            color: #fff;
-                            font-size: 110%;
-                            transition: color 0.2s ease-in-out;
-
-                            &:hover {
-                                color: nth($list: $paleta-de-colores, $n:3 );
+                                a {
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-size: 110%;
+                                    transition: color 0.2s ease-in-out;
+        
+                                    &:hover {
+                                        color: nth($list: $paleta-de-colores, $n:3 );
+                                    }
+                                }
+        
+                                .active-header {
+                                    color: nth($list: $paleta-de-colores, $n:3 );
+                                }
                             }
-
-                            .active-header {
-                                color: nth($list: $paleta-de-colores, $n:3 );
-                            }
+    
                         }
                     }
+
+
                 }
             } 
         }
@@ -94,20 +101,20 @@
                 }
 
                 .header_nav_container {
-                    display: inline-block;
-
-                    .header_nav {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        gap: 40px;
-                        margin: 0;
-                        list-style: none;
-
-                        a {
-                            text-decoration: none;
-                            font-size: 120%;
-                            transition: color 0.2s ease-in-out;
+                    .header_nav_navegation {
+                        .header_nav {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 40px;
+                            margin: 0;
+                            list-style: none;
+    
+                            a {
+                                text-decoration: none;
+                                font-size: 120%;
+                                transition: color 0.2s ease-in-out;
+                            }
                         }
                     }
                 }
@@ -130,12 +137,14 @@
                 }
 
                 .header_nav_container {
-                    .header_nav {
-                        gap: 100px;
-
-                        a {
-                            font-size: 130%;
-                            transition: color 0.2s ease-in-out;
+                    .header_nav_navegation {
+                        .header_nav {
+                            gap: 100px;
+    
+                            a {
+                                font-size: 130%;
+                                transition: color 0.2s ease-in-out;
+                            }
                         }
                     }
                 }
@@ -157,12 +166,14 @@
                 }
 
                 .header_nav_container {
-                    .header_nav {
-                        gap: 100px;
-
-                        a {
-                            font-size: 160%;
-                            transition: color 0.2s ease-in-out;
+                    .header_nav_navegation {
+                        .header_nav {
+                            gap: 100px;
+    
+                            a {
+                                font-size: 160%;
+                                transition: color 0.2s ease-in-out;
+                            }
                         }
                     }
                 }

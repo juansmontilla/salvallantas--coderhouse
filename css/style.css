@@ -129,7 +129,7 @@ header .header_container .header_content .header_nav_responsive_container {
   justify-content: center;
   z-index: 1;
 }
-header .header_container .header_content .header_nav_responsive_container .header_nav_responsive {
+header .header_container .header_content .header_nav_responsive_container .header_nav_responsive_navegation .header_nav_responsive {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -138,16 +138,16 @@ header .header_container .header_content .header_nav_responsive_container .heade
   gap: 80px;
   list-style: none;
 }
-header .header_container .header_content .header_nav_responsive_container .header_nav_responsive a {
+header .header_container .header_content .header_nav_responsive_container .header_nav_responsive_navegation li a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-header .header_container .header_content .header_nav_responsive_container .header_nav_responsive a:hover {
+header .header_container .header_content .header_nav_responsive_container .header_nav_responsive_navegation li a:hover {
   color: #ff0000;
 }
-header .header_container .header_content .header_nav_responsive_container .header_nav_responsive a .active-header {
+header .header_container .header_content .header_nav_responsive_container .header_nav_responsive_navegation li .active-header {
   color: #ff0000;
 }
 header .header_container .header_nav_container {
@@ -1224,7 +1224,7 @@ header .header_container .header_nav_container {
   header .header_container .header_content .header_nav_container {
     display: inline-block;
   }
-  header .header_container .header_content .header_nav_container .header_nav {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1232,16 +1232,16 @@ header .header_container .header_nav_container {
     margin: 0;
     list-style: none;
   }
-  header .header_container .header_content .header_nav_container .header_nav a {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav li a {
     text-decoration: none;
     color: #fff;
     font-size: 110%;
     transition: color 0.2s ease-in-out;
   }
-  header .header_container .header_content .header_nav_container .header_nav a:hover {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav li a:hover {
     color: #ff0000;
   }
-  header .header_container .header_content .header_nav_container .header_nav a .active-header {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav li .active-header {
     color: #ff0000;
   }
 }
@@ -1259,10 +1259,7 @@ header .header_container .header_nav_container {
   header .header_container .header_content .checkbtn {
     display: none;
   }
-  header .header_container .header_content .header_nav_container {
-    display: inline-block;
-  }
-  header .header_container .header_content .header_nav_container .header_nav {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1270,7 +1267,7 @@ header .header_container .header_nav_container {
     margin: 0;
     list-style: none;
   }
-  header .header_container .header_content .header_nav_container .header_nav a {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav a {
     text-decoration: none;
     font-size: 120%;
     transition: color 0.2s ease-in-out;
@@ -1284,10 +1281,10 @@ header .header_container .header_nav_container {
   header .header_container .header_content .logo_container .logo {
     width: 130px;
   }
-  header .header_container .header_content .header_nav_container .header_nav {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav {
     gap: 100px;
   }
-  header .header_container .header_content .header_nav_container .header_nav a {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav a {
     font-size: 130%;
     transition: color 0.2s ease-in-out;
   }
@@ -1299,10 +1296,10 @@ header .header_container .header_nav_container {
   header .header_container .header_content .logo_container .logo {
     width: 130px;
   }
-  header .header_container .header_content .header_nav_container .header_nav {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav {
     gap: 100px;
   }
-  header .header_container .header_content .header_nav_container .header_nav a {
+  header .header_container .header_content .header_nav_container .header_nav_navegation .header_nav a {
     font-size: 160%;
     transition: color 0.2s ease-in-out;
   }
